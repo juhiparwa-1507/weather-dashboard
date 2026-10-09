@@ -117,3 +117,41 @@ input:focus-visible, button:focus-visible {
   .icon { font-size: 56px; }
   .stats { grid-template-columns: 1fr; }
 }
+```css
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    .search-box {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-box input,
+    .search-box button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .weather-card {
+        padding: 20px;
+    }
+
+    .temperature {
+        font-size: 36px;
+    }
+
+    .forecast {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .forecast-item {
+        flex: 1 1 100px;
+    }
+}
+```
